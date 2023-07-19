@@ -1,0 +1,35 @@
+{
+    "name": "TaskUserConfig",
+    "uri": "http://activiti.org/bpmn",
+    "prefix": "activiti",
+    "xml": {
+        "tagAlias": "lowerCase"
+    },
+    "types": [
+        {
+            "name": "AssigneeNode",
+            "extends": [
+                "bpmn:FlowNode"
+            ],
+            "properties": [
+                {
+                    "name": "assignee",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "candidateUsers",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "candidateGroups",
+                    "isAttr": true,
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "emumerations": [],
+    "associations": []
+}

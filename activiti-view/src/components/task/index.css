@@ -1,0 +1,24 @@
+.view {
+    margin: 20px;
+}
+.task-view {
+    float: left;
+    margin-right: 50px;
+}
+.view .task-view .panel {
+    float: left;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 500px;
+    background-color: #fff;
+}
+.view .task-view .panel .list {
+    margin: 20px 0;
+}
+.view .task-view .panel .list .item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 0.5px solid #ccc;
+}

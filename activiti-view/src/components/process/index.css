@@ -1,0 +1,10 @@
+.process-view {
+    width: 80%;
+    margin: 0 auto;
+}
+.process-view .process {
+    display: inline-block;
+    margin: 20px 20px 20px 0;
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+}

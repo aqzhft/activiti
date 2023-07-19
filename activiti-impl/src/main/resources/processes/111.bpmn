@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions
+        xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+        xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+        xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+        xmlns:activiti="http://activiti.org/bpmn"
+        xmlns:modeler="http://activiti.com/modeler" targetNamespace="http://www.activiti.org/processdef"
+        modeler:version="1.0ev" modeler:exportDateTime="20170726123124" modeler:modelId="1005315"
+        modeler:modelVersion="1" modeler:modelLastUpdated="1501068675875">
+    <bpmn2:process id="system_holiday" name="请假申请" isExecutable="true">
+        <bpmn2:startEvent id="StartEvent_064n00b">
+            <bpmn2:outgoing>SequenceFlow_0ggmia4</bpmn2:outgoing>
+        </bpmn2:startEvent>
+        <bpmn2:userTask id="UserTask_0gvn0dt" name="填写申请" activiti:assignee="zhangsan" />
+        <bpmn2:userTask id="UserTask_00hkiiq" name="审批申请" />
+        <bpmn2:endEvent id="EndEvent_1eukty5">
+            <bpmn2:incoming>SequenceFlow_0vle29r</bpmn2:incoming>
+        </bpmn2:endEvent>
+        <bpmn2:sequenceFlow id="SequenceFlow_0ggmia4" sourceRef="StartEvent_064n00b" targetRef="UserTask_0gvn0dt" />
+        <bpmn2:sequenceFlow id="SequenceFlow_1pwzdff" sourceRef="UserTask_0gvn0dt" targetRef="UserTask_00hkiiq" />
+        <bpmn2:sequenceFlow id="SequenceFlow_0vle29r" sourceRef="UserTask_00hkiiq" targetRef="EndEvent_1eukty5" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_system_holiday">
+        <bpmndi:BPMNPlane id="BPMNPlane_system_holiday" bpmnElement="system_holiday">
+            <bpmndi:BPMNShape id="BPMNShape_StartEvent_064n00b" bpmnElement="StartEvent_064n00b">
+                <omgdc:Bounds x="154" y="272" width="36" height="36" />
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="BPMNShape_UserTask_0gvn0dt" bpmnElement="UserTask_0gvn0dt">
+                <omgdc:Bounds x="310" y="250" width="100" height="80" />
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="BPMNShape_UserTask_00hkiiq" bpmnElement="UserTask_00hkiiq">
+                <omgdc:Bounds x="530" y="250" width="100" height="80" />
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape id="BPMNShape_EndEvent_1eukty5" bpmnElement="EndEvent_1eukty5">
+                <omgdc:Bounds x="702" y="272" width="36" height="36" />
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_0ggmia4" bpmnElement="SequenceFlow_0ggmia4">
+                <omgdi:waypoint x="190" y="290" />
+                <omgdi:waypoint x="310" y="290" />
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1pwzdff" bpmnElement="SequenceFlow_1pwzdff">
+                <omgdi:waypoint x="410" y="290" />
+                <omgdi:waypoint x="530" y="290" />
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_0vle29r" bpmnElement="SequenceFlow_0vle29r">
+                <omgdi:waypoint x="630" y="290" />
+                <omgdi:waypoint x="702" y="290" />
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</bpmn2:definitions>
