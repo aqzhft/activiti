@@ -1,2 +1,2 @@
 # activiti
-just activiti7's sample
+just a activiti7's sample
